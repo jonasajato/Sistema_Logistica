@@ -11,14 +11,19 @@ import User.User;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Apptest {
 
     public static void main(String[] args) {
+        Scanner nName = new Scanner(System.in);
+        Scanner nEmail = new Scanner(System.in);
         User user = new User();
         user.setUserId(1);
-        user.setName("Teste");
-        user.setEmailId("teste@gmail.com");
+        System.out.println("Digite seu nome:");
+        user.setName(nName.nextLine());
+        System.out.println("Digite seu e-mail:");
+        user.setEmailId(nEmail.nextLine());
 
         Item item1 = new Item();
         item1.setName("item1");
