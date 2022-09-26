@@ -26,7 +26,7 @@ public class LogisticsSystem {
     public void takeAnOrder(Order order)
     {
         //Aqui devemos colocar um Scanner
-        System.out.println("Adding an order to the system");
+        System.out.println("Novo pedido: ");
         orders.add(order);
     }
 
